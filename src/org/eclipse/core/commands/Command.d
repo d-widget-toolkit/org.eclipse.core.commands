@@ -44,7 +44,6 @@ import org.eclipse.core.commands.ITypedParameter;
 import org.eclipse.core.commands.HandlerEvent;
 
 import java.lang.all;
-import tango.io.Stdout;
 
 /**
  * <p>
@@ -870,7 +869,7 @@ public final class Command : NamedHandleObjectWithState,
                 // provide information if tracing
                 Tracing.printTrace("HANDLERS", "Handler " ~ (cast(Object)handler).toString()  ~ " for "  //$NON-NLS-1$//$NON-NLS-2$ //$NON-NLS-3$
                         ~ id ~ " threw unexpected exception"); //$NON-NLS-1$
-                ExceptionPrintStackTrace( e, Stdout );
+                ExceptionPrintStackTrace( e, & getDwtLogger().info );
             }
         }
         return false;
