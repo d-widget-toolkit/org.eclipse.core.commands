@@ -21,7 +21,6 @@ import java.lang.all;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.Iterator;
-import tango.text.convert.Format;
 
 /**
  * <p>

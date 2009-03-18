@@ -20,7 +20,6 @@ import org.eclipse.core.commands.IParameterTypeListener;
 import org.eclipse.core.commands.ParameterTypeEvent;
 
 import java.lang.all;
-import tango.text.convert.Format;
 
 /**
  * <p>
