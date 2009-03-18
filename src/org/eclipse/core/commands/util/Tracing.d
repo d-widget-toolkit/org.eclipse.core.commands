@@ -14,7 +14,6 @@
 module org.eclipse.core.commands.util.Tracing;
 
 import java.lang.all;
-import tango.util.log.Trace;
 
 /**
  * <p>
@@ -61,7 +60,7 @@ public final class Tracing {
         if (message.length !is 0) {
             buffer.append(message);
         }
-        Trace.formatln( "{}", buffer.toString());
+        getDwtLogger().trace( __FILE__, __LINE__, "{}", buffer.toString());
     }
 
     /**
