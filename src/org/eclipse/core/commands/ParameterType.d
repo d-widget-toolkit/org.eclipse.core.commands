@@ -159,6 +159,9 @@ public final class ParameterType : HandleObject, Comparable {
         }
         return compareTo;
     }
+    public final override int opCmp( Object object ){
+        return compareTo( object );
+    }
 
     /**
      * <p>

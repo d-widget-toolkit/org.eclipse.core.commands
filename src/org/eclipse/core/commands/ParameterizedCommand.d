@@ -444,6 +444,9 @@ public final class ParameterizedCommand : Comparable {
                     "Concurrent modification of a command's defined state"); //$NON-NLS-1$
         }
     }
+    public final override int opCmp( Object object ){
+        return compareTo( object );
+    }
 
     /*
      * (non-Javadoc)
